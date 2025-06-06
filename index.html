@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Eid-ul-Adha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-top: 1rem;
+      animation: fadeInText 3s ease-in;
+    }
+
+    .tag {
+      margin-top: 2rem;
+      color: #90ee90;
+      font-weight: bold;
+      animation: fadeInText 3.5s ease-in;
+    }
+
+    .moon {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      font-size: 4rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ffd700; }
+      to { text-shadow: 0 0 20px #ffd700; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🌙 Moon Animation -->
+  <div class="moon">🌙</div>
+
+  <!-- 📜 Eid Message Card -->
+  <div class="card">
+    <h1>Happy Eid-ul-Adha</h1>
+    <p>May your life be filled with peace, love, and prosperity this blessed day and always.</p>
+    <div class="tag">— From Misharaize</div>
+  </div>
+
+  <!-- 🔊 Background Music -->
+  <audio autoplay loop>
+    <source src="music/tiktokio.com_1Mt7nGDuDFCd9L5U8PW2.mp3.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
